@@ -7,8 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #f5f5f5; /* Latar belakang terang */
-    color: #333; /* Warna teks gelap untuk kontras */
+    background: #f5f5f5; 
+    color: #333; 
     position: relative;
 }
 
@@ -19,7 +19,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.05); /* Bayangan sangat halus */
+    background: rgba(0, 0, 0, 0.05); 
     pointer-events: none;
     z-index: 0;
 }
@@ -28,14 +28,14 @@ body::before {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9); /* Latar belakang navbar putih */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Bayangan halus */
-    transition: background 0.3s ease, transform 0.3s ease; /* Transisi pada latar belakang dan transformasi */
+    background: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    transition: background 0.3s ease, transform 0.3s ease; 
     z-index: 1000;
 }
 
 .navbar:hover {
-    transform: translateY(-2px); /* Efek mengangkat saat mouse hover */
+    transform: translateY(-2px); 
 }
 
 .navbar ul {
@@ -49,30 +49,30 @@ body::before {
     color: #333; /* Warna teks navbar gelap */
     text-decoration: none;
     padding: 10px 15px;
-    transition: color 0.3s ease, background 0.3s ease; /* Transisi pada warna teks dan latar belakang */
-    position: relative; /* Membutuhkan untuk efek hover */
+    transition: color 0.3s ease, background 0.3s ease; 
+    position: relative; 
 }
 
 .navbar a::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -3px; /* Posisi garis di bawah tautan */
+    bottom: -3px; 
     height: 2px;
     width: 100%;
-    background: #000; /* Warna garis */
-    transform: scaleX(0); /* Mulai dengan garis tidak terlihat */
-    transition: transform 0.3s ease; /* Transisi pada garis */
+    background: #000;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
 }
 
 .navbar a:hover {
-    background: rgba(0, 0, 0, 0.1); /* Warna hover lebih gelap */
+    background: rgba(0, 0, 0, 0.1); 
     border-radius: 5px;
-    color: #000; /* Mengubah warna teks menjadi lebih gelap saat hover */
+    color: #000; 
 }
 
 .navbar a:hover::after {
-    transform: scaleX(1); /* Efek muncul pada garis di bawah tautan */
+    transform: scaleX(1); 
 }
 
 .hero {
@@ -82,7 +82,7 @@ body::before {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0, 0, 0, 0.05); /* Latar belakang hero putih dengan transparansi */
+    background: rgba(0, 0, 0, 0.05); 
     transition: background 0.3s ease;
     position: relative;
 }
@@ -90,49 +90,49 @@ body::before {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #000; /* Mengubah warna teks menjadi hitam */
-    transition: transform 0.5s ease; /* Transisi untuk animasi teks */
+    color: #000; 
+    transition: transform 0.5s ease; 
 }
 
 .hero-image {
-    width: 150px; /* Ukuran kecil */
-    height: 150px; /* Ukuran kecil */
-    border-radius: 50%; /* Membuat gambar menjadi bulat */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
     object-fit: cover;
     margin-top: 20px;
-    animation: fadeIn 1s; /* Animasi gambar saat muncul */
+    animation: fadeIn 1s; 
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px); /* Muncul dari bawah */
+        transform: translateY(20px); 
     }
     to {
         opacity: 1;
-        transform: translateY(0); /* Muncul di posisi normal */
+        transform: translateY(0); 
     }
 }
 
 section {
     padding: 60px 20px;
     text-align: center;
-    background: #fff; /* Latar belakang bagian putih */
-    color: #333; /* Warna teks gelap */
+    background: #fff; 
+    color: #333; 
 }
 
 section:nth-child(even) {
-    background: rgba(240, 240, 240, 1); /* Latar belakang bagian genap abu-abu sangat terang */
+    background: rgba(240, 240, 240, 1); 
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Latar belakang footer putih */
+    background: rgba(255, 255, 255, 0.9); 
 }
 
 footer p {
     margin: 0;
-    color: #333; /* Mengubah warna teks menjadi gelap */
+    color: #333; 
 }
